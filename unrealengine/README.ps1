@@ -1,3 +1,12 @@
+$title = "
+# UnrealEngine-Keymap-Azerty
+
+Qwerty shortcuts fixed for Azerty keyboard
+keymap is Based on https://www.youtube.com/watch?v=jGDDEMGOk-c And some fixes are added.
+Non-destructive Blender-shortcuts are added.
+
+"
+
 $mapping = @{
     "OpenBracket"="{";
     "CloseBracket"="}";
@@ -44,7 +53,7 @@ function Format-Shortcut($Data){
 }
 
 function ConvertTo-Markdown($data){       
-    Write-Output "# Keymap"
+    Write-Output $title
     Write-Output ""
 
     $data | Group-Object -Property BindingContext | Sort-Object -Property Name| % {
@@ -67,4 +76,4 @@ function ConvertTo-Markdown($data){
 }
 
 $data = Decode-Keymap-To-Json-Format -File ".\UnrealEngine-Keymap-Azerty.ini" | ConvertFrom-Json
-ConvertTo-Markdown -data $data | Out-File ".\UnrealEngine-Keymap-Azerty.md"
+ConvertTo-Markdown -data $data | Out-File ".\README.md"
