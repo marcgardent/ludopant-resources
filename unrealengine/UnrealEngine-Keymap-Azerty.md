@@ -19,3 +19,8 @@
 - change View : <num[17235]>  
 - navigate : <num[2486]>  
 - focus : <num dot>
+
+### Node Editor
+
+- CTRL+G Collapse Nodes
+- CTRL+SHIFT+G Expand Nodes
