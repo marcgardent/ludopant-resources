@@ -13,28 +13,22 @@ $mapping = @{
     "Quote"='"';
 }
 
-function Decode-Ini($content){
+function ConvertFrom-IniEscaping($content){
     foreach ($map in $mapping.GetEnumerator()) {
         $content = $content.replace("~$($map.Name)~", $map.Value)
     }
     Write-output $content
 }
- 
-function Decode-Keymap-To-Json-Format($File){
-    $Items = get-content $File | Where { $_.StartsWith("UserDefinedChords=")} | % { $_.substring(18) }
-    $Total = $Items.count
-    $Counter = 0
-    Write-Output "["
-    foreach ($Item in $Items) {
-        $Counter += 1
-        $decoded = Decode-Ini -content $Item
-        if($Counter -ne $Total) {
-            Write-Output "$decoded,"
-        }else{
-            Write-Output "$decoded"
-        }
+  
+function ConvertFrom-UEKeymap($File){
+    get-content $File | Where { $_.StartsWith("UserDefinedChords=")} | % { $_.substring(18) } | %{
+        $decoded = ConvertFrom-IniEscaping -content $_ | ConvertFrom-Json
+        $shortcut = Format-Shortcut -Data $decoded
+        $CanonicalName = "$($decoded.BindingContext).$($decoded.CommandName)[$($decoded.ChordIndex)]=$shortcut"
+        $decoded | Add-Member -NotePropertyName "Raw" -NotePropertyValue "UserDefinedChords=$_"
+        $decoded | Add-Member -NotePropertyName "CanonicalName" -NotePropertyValue $CanonicalName
+        Write-Output $decoded
     }
-    Write-Output "]"
 }
 
 function Format-Shortcut($Data){
@@ -48,7 +42,7 @@ function Format-Shortcut($Data){
     if ($ret -ne ""){
         return "``" + $ret+"``"
     } else {
-        return ""
+        return "``undefined``"
     }
 }
 
@@ -56,7 +50,7 @@ function ConvertTo-Markdown($data){
     Write-Output $title
     Write-Output ""
 
-    $data | Group-Object -Property BindingContext | Sort-Object -Property Name| % {
+    $data | Group-Object -Property BindingContext | Sort-Object -Property Name | % {
 
         $group = $_.Group
         $name = $_.Name
@@ -75,5 +69,17 @@ function ConvertTo-Markdown($data){
     }
 }
 
-$data = Decode-Keymap-To-Json-Format -File ".\UnrealEngine-Keymap-Azerty.ini" | ConvertFrom-Json
+function ConvertTo-Commented($data) {
+    Write-Output "[UserDefinedChords]"
+    $data | Sort-Object -Property CanonicalName | % {
+        Write-Output "; $($_.CanonicalName)"
+        Write-Output $_.Raw
+    } 
+    Write-Output ""
+    Write-Output ""
+}
+
+$data = ConvertFrom-UEKeymap -File ".\UnrealEngine-Keymap-Azerty.ini"
 ConvertTo-Markdown -data $data | Out-File ".\README.md"
+ConvertTo-Commented -data $data | Out-File ".\UnrealEngine-Keymap-Azerty.ini"
+

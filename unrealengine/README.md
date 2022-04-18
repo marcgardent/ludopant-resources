@@ -11,7 +11,7 @@ Non-destructive Blender-shortcuts are added.
 
 Name | main shortcut | secondary shortcut
 --- | --- | ---
-ToggleCameraShakesPreview | `P` | 
+ToggleCameraShakesPreview | `P` | `undefined`
 
 ## EditorViewport
 
@@ -19,31 +19,31 @@ Name | main shortcut | secondary shortcut
 --- | --- | ---
 Back | `ALT+SHIFT+H` | `CTRL+NumPadOne`
 Bottom | `ALT+SHIFT+J` | `CTRL+NumPadSeven`
-DetailLightingMode | `ALT+LeftParantheses` | 
+DetailLightingMode | `ALT+LeftParantheses` | `undefined`
 FocusViewportToSelection | `F` | `Decimal`
 Front | `ALT+H` | `NumPadOne`
 Left | `ALT+K` | `CTRL+NumPadThree`
-LightComplexityMode | `ALT+E_AccentGrave` | 
-LightingOnlyMode | `ALT+Hyphen` | 
-LightmapDensityMode | `ALT+A_AccentGrave` | 
-LitMode | `ALT+Apostrophe` | 
+LightComplexityMode | `ALT+E_AccentGrave` | `undefined`
+LightingOnlyMode | `ALT+Hyphen` | `undefined`
+LightmapDensityMode | `ALT+A_AccentGrave` | `undefined`
+LitMode | `ALT+Apostrophe` | `undefined`
 Perspective | `ALT+G` | `NumPadFive`
 Right | `ALT+SHIFT+K` | `NumPadThree`
-RotateMode | `E` | 
-SelectMode | `A` | 
-ShaderComplexityMode | `ALT+Underscore` | 
+RotateMode | `E` | `undefined`
+SelectMode | `A` | `undefined`
+ShaderComplexityMode | `ALT+Underscore` | `undefined`
 Top | `ALT+J` | `NumPadSeven`
-TranslateMode | `Z` | 
-UnlitMode | `ALT+Quote` | 
-WireframeMode | `ALT+E_AccentAigu` | 
+TranslateMode | `Z` | `undefined`
+UnlitMode | `ALT+Quote` | `undefined`
+WireframeMode | `ALT+E_AccentAigu` | `undefined`
 
 ## EditorViewportClient
 
 Name | main shortcut | secondary shortcut
 --- | --- | ---
-Down |  | `NumPadTwo`
-Forward | `Z` | 
-FovZoomOut |  | 
+Down | `undefined` | `NumPadTwo`
+Forward | `Z` | `undefined`
+FovZoomOut | `undefined` | `undefined`
 Left | `Q` | `NumPadFour`
 Right | `D` | `NumPadSix`
 Up | `E` | `NumPadEight`
@@ -52,75 +52,75 @@ Up | `E` | `NumPadEight`
 
 Name | main shortcut | secondary shortcut
 --- | --- | ---
-FlattenTangents | `Hyphen` | 
-InterpolationConstant | `LeftParantheses` | 
-InterpolationCubicAuto | `Ampersand` | 
-InterpolationCubicBreak | `Quote` | 
-InterpolationCubicUser | `E_AccentAigu` | 
-InterpolationLinear | `Apostrophe` | 
+FlattenTangents | `Hyphen` | `undefined`
+InterpolationConstant | `LeftParantheses` | `undefined`
+InterpolationCubicAuto | `Ampersand` | `undefined`
+InterpolationCubicBreak | `Quote` | `undefined`
+InterpolationCubicUser | `E_AccentAigu` | `undefined`
+InterpolationLinear | `Apostrophe` | `undefined`
 
 ## GraphEditor
 
 Name | main shortcut | secondary shortcut
 --- | --- | ---
-CollapseNodes | `CTRL+G` | 
-ExpandNodes | `CTRL+SHIFT+G` | 
-QuickJump1 | `SHIFT+Ampersand` | 
-QuickJump2 | `SHIFT+E_AccentAigu` | 
-QuickJump3 | `SHIFT+Quote` | 
-QuickJump4 | `SHIFT+Apostrophe` | 
-QuickJump5 | `SHIFT+LeftParantheses` | 
-QuickJump6 | `SHIFT+Hyphen` | 
-QuickJump7 | `SHIFT+E_AccentGrave` | 
-QuickJump8 | `SHIFT+Underscore` | 
-QuickJump9 | `SHIFT+C_Cedille` | 
-SetQuickJump1 | `CTRL+Ampersand` | 
-SetQuickJump2 | `CTRL+E_AccentAigu` | 
-SetQuickJump3 | `CTRL+Quote` | 
-SetQuickJump4 | `CTRL+Apostrophe` | 
-SetQuickJump5 | `CTRL+LeftParantheses` | 
-SetQuickJump6 | `CTRL+Hyphen` | 
-SetQuickJump7 | `CTRL+E_AccentGrave` | 
-SetQuickJump8 | `CTRL+Underscore` | 
-SetQuickJump9 | `CTRL+C_Cedille` | 
+CollapseNodes | `CTRL+G` | `undefined`
+ExpandNodes | `CTRL+SHIFT+G` | `undefined`
+QuickJump1 | `SHIFT+Ampersand` | `undefined`
+QuickJump2 | `SHIFT+E_AccentAigu` | `undefined`
+QuickJump3 | `SHIFT+Quote` | `undefined`
+QuickJump4 | `SHIFT+Apostrophe` | `undefined`
+QuickJump5 | `SHIFT+LeftParantheses` | `undefined`
+QuickJump6 | `SHIFT+Hyphen` | `undefined`
+QuickJump7 | `SHIFT+E_AccentGrave` | `undefined`
+QuickJump8 | `SHIFT+Underscore` | `undefined`
+QuickJump9 | `SHIFT+C_Cedille` | `undefined`
+SetQuickJump1 | `CTRL+Ampersand` | `undefined`
+SetQuickJump2 | `CTRL+E_AccentAigu` | `undefined`
+SetQuickJump3 | `CTRL+Quote` | `undefined`
+SetQuickJump4 | `CTRL+Apostrophe` | `undefined`
+SetQuickJump5 | `CTRL+LeftParantheses` | `undefined`
+SetQuickJump6 | `CTRL+Hyphen` | `undefined`
+SetQuickJump7 | `CTRL+E_AccentGrave` | `undefined`
+SetQuickJump8 | `CTRL+Underscore` | `undefined`
+SetQuickJump9 | `CTRL+C_Cedille` | `undefined`
 
 ## LevelEditorModes
 
 Name | main shortcut | secondary shortcut
 --- | --- | ---
-EditorMode.EM_Default | `SHIFT+Ampersand` | 
-EditorMode.EM_Foliage | `SHIFT+Apostrophe` | 
-EditorMode.EM_Geometry | `SHIFT+LeftParantheses` | 
-EditorMode.EM_Landscape | `SHIFT+Quote` | 
-EditorMode.MeshPaintMode | `SHIFT+E_AccentAigu` | 
+EditorMode.EM_Default | `SHIFT+Ampersand` | `undefined`
+EditorMode.EM_Foliage | `SHIFT+Apostrophe` | `undefined`
+EditorMode.EM_Geometry | `SHIFT+LeftParantheses` | `undefined`
+EditorMode.EM_Landscape | `SHIFT+Quote` | `undefined`
+EditorMode.MeshPaintMode | `SHIFT+E_AccentAigu` | `undefined`
 
 ## LevelViewport
 
 Name | main shortcut | secondary shortcut
 --- | --- | ---
-JumpToBookmark1 | `Ampersand` | 
-JumpToBookmark2 | `E_AccentAigu` | 
-JumpToBookmark3 | `Quote` | 
-JumpToBookmark4 | `Apostrophe` | 
-JumpToBookmark5 | `LeftParantheses` | 
-JumpToBookmark6 | `Hyphen` | 
-JumpToBookmark7 | `E_AccentGrave` | 
-JumpToBookmark8 | `Underscore` | 
-JumpToBookmark9 | `C_Cedille` | 
-SetBookmark0 | `CTRL+A_AccentGrave` | 
-SetBookmark1 | `CTRL+Ampersand` | 
-SetBookmark2 | `CTRL+E_AccentAigu` | 
-SetBookmark3 | `CTRL+Quote` | 
-SetBookmark4 | `CTRL+Apostrophe` | 
-SetBookmark5 | `CTRL+LeftParantheses` | 
-SetBookmark6 | `CTRL+Hyphen` | 
-SetBookmark7 | `CTRL+E_AccentGrave` | 
-SetBookmark8 | `CTRL+Underscore` | 
-SetBookmark9 | `CTRL+C_Cedille` | 
+JumpToBookmark1 | `Ampersand` | `undefined`
+JumpToBookmark2 | `E_AccentAigu` | `undefined`
+JumpToBookmark3 | `Quote` | `undefined`
+JumpToBookmark4 | `Apostrophe` | `undefined`
+JumpToBookmark5 | `LeftParantheses` | `undefined`
+JumpToBookmark6 | `Hyphen` | `undefined`
+JumpToBookmark7 | `E_AccentGrave` | `undefined`
+JumpToBookmark8 | `Underscore` | `undefined`
+JumpToBookmark9 | `C_Cedille` | `undefined`
+SetBookmark0 | `CTRL+A_AccentGrave` | `undefined`
+SetBookmark1 | `CTRL+Ampersand` | `undefined`
+SetBookmark2 | `CTRL+E_AccentAigu` | `undefined`
+SetBookmark3 | `CTRL+Quote` | `undefined`
+SetBookmark4 | `CTRL+Apostrophe` | `undefined`
+SetBookmark5 | `CTRL+LeftParantheses` | `undefined`
+SetBookmark6 | `CTRL+Hyphen` | `undefined`
+SetBookmark7 | `CTRL+E_AccentGrave` | `undefined`
+SetBookmark8 | `CTRL+Underscore` | `undefined`
+SetBookmark9 | `CTRL+C_Cedille` | `undefined`
 
 ## WidgetDesigner
 
 Name | main shortcut | secondary shortcut
 --- | --- | ---
-LayoutTransform | `W` | 
+LayoutTransform | `W` | `undefined`
 
